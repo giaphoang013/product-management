@@ -4,6 +4,18 @@ const flash = require('express-flash')
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
 
+
+// sửa lỗi 504 theo youtube
+const cors = require("cors");
+const corsConfig = {
+  origin: "*",
+  credent: true,
+  methods: ["GET", "POST", "PUT", "DELETE"]
+}
+app.options("", cors(corsConfig))
+app.use(cors(corsConfig));
+
+// 
 var bodyParser = require('body-parser')
 
 require("dotenv").config();
