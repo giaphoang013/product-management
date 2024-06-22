@@ -11,9 +11,9 @@
         
         "src": "/(.*)",
      
-        "dest": "index.js",
+        "dest": "index.js"
 
-        "methods": ["GET", "POST", "PATCH", "PUT", "DELETE", "OPTIONS"]
+      
       }
     ]
   }
