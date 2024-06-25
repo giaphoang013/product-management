@@ -148,10 +148,11 @@ module.exports.createPost = async (req, res) => {
     } else {
         req.body.position = parseInt(req.body.position)
     }
-    if (req.file){
-        req.body.thumbnail = `/uploads/${req.file.filename}`
-    }
-    
+    // Lưu offline trong thư mục upload
+    // if (req.file){
+    //     req.body.thumbnail = `/uploads/${req.file.filename}`
+    // }
+ 
     
     // Lưa dữ liệu vào database
     const product = new Product(req.body);
