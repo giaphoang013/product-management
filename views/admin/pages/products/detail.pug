@@ -28,10 +28,10 @@ block main
         span(class="badge badge-danger") Dừng hoạt động
 
   if (product.position)
-    h1(class="mb-4") Giá <b>#{product.position}</b> 
+    h1(class="mb-4") Vị trí <b>#{product.position}</b> 
 
   if (product.description)
-    h1(class="mb-4") Giá <b>#{product.description}</b> 
+    h1(class="mb-4") Mô tả !{product.description} 
 
   a(
     href=`${prefixAdmin}/products/edit/${product.id}`
